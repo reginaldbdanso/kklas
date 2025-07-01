@@ -1,0 +1,450 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  align-items: stretch;
+  gap: 1.8vw;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  font-family:
+    "Inter",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  display: flex;
+  width: 24.2vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar-background {
+  width: 24.2vw;
+  height: 100vh;
+  border-radius: 2.3vw 0px 0px 2.3vw;
+  background: #fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.sidebar-content {
+  display: flex;
+  width: 19vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.9vh;
+  position: absolute;
+  left: 2.6vw;
+  top: 8.9vh;
+  height: 86.3vh;
+}
+
+/* School Section */
+.school-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.9vh;
+  align-self: stretch;
+}
+
+.school-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1vh;
+  align-self: stretch;
+}
+
+.school-logo {
+  width: 10.9vw;
+  height: 14.2vh;
+  position: relative;
+}
+
+.logo-image {
+  display: flex;
+  width: 6.3vw;
+  height: 11.1vh;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  left: 2.5vw;
+  top: 0px;
+}
+
+.school-name {
+  color: #000;
+  text-align: center;
+  font-size: 1.1vw;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 0px;
+  top: 11.8vh;
+  width: 10.9vw;
+  height: 2.4vh;
+}
+
+.student-info {
+  width: 19vw;
+  height: 4.2vh;
+  background: #f3f7fa;
+  border-radius: 0.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #616161;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8vh;
+  align-self: stretch;
+}
+
+.nav-item {
+  width: 19vw;
+  height: 6vh;
+  border-radius: 0.8vw;
+  background: #f0f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.4vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  background: #0b74bb;
+  color: #fff;
+}
+
+.nav-item span {
+  font-size: 0.9vw;
+  font-weight: 700;
+  color: #000;
+}
+
+.nav-item.active span {
+  color: #fff;
+}
+
+.nav-arrow {
+  width: 1.9vw;
+  height: 3.3vh;
+  flex-shrink: 0;
+}
+
+.notification-badge {
+  width: 1.7vw;
+  height: 2.8vh;
+  border-radius: 0.5vw;
+  background: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 700;
+}
+
+/* Secondary Menu */
+.secondary-menu {
+  display: flex;
+  height: 32.1vh;
+  padding: 3.8vh 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.9vh;
+  align-self: stretch;
+  border-radius: 1.6vw;
+  background: #f0f3f5;
+}
+
+.menu-item {
+  width: 19vw;
+  height: 3.5vh;
+  display: flex;
+  align-items: center;
+  gap: 3.7vw;
+  padding: 0 1.5vw;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 1.3vw;
+  height: 2.4vh;
+  flex-shrink: 0;
+}
+
+.menu-item span {
+  color: #616161;
+  font-size: 0.9vw;
+  font-weight: 700;
+}
+
+/* Main Content Styles */
+.main-content {
+  width: 75.8vw;
+  height: 100vh;
+  background: #f0f3f5;
+  position: relative;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 72.1vw;
+  height: 95.6vh;
+  padding: 4vh 4.5vw 2.9vh 4.5vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4vh;
+  border-radius: 1.6vw;
+  background: #fff;
+  position: absolute;
+  left: 1.9vw;
+  top: 2.2vh;
+}
+
+.content-inner {
+  display: flex;
+  width: 57.9vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.7vh;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.4vh;
+  align-self: stretch;
+  position: relative;
+}
+
+.tab-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.tab-wrapper {
+  width: 9.4vw;
+  height: 4.3vh;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-wrapper.live-class {
+  position: relative;
+}
+
+.tab-bg {
+  height: 4.3vh;
+  border-radius: 0.8vw;
+  background: #f0f3f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tab-bg.active {
+  background: #0b74bb;
+}
+
+.tab-text {
+  color: #000;
+  text-align: center;
+  font-size: 0.9vw;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 1.1vh 1.2vw;
+  position: relative;
+  z-index: 1;
+  height: 4.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-text.active {
+  color: #fff;
+}
+
+.live-indicator {
+  width: 0.5vw;
+  height: 1vh;
+  border-radius: 50%;
+  background: #e00000;
+  position: absolute;
+  right: 0.4vw;
+  top: 0.7vh;
+  z-index: 2;
+}
+
+/* Library Grid */
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 9.1vw);
+  gap: 3.1vh 3.9vw;
+  width: 35.2vw;
+  align-items: start;
+  justify-content: start;
+}
+
+.library-item {
+  width: 9.1vw;
+  min-height: 16.7vh;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content {
+  display: flex;
+  width: 9.1vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1vh;
+  position: relative;
+}
+
+.item-icon {
+  display: flex;
+  width: 9.1vw;
+  height: 13.6vh;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.6vw;
+  background: #f0f3f5;
+  position: relative;
+}
+
+.item-icon svg {
+  z-index: 2;
+  position: relative;
+}
+
+.ebook-icon {
+  width: 3.4vw;
+  height: 6.1vh;
+}
+
+.item-label {
+  width: 9.1vw;
+  color: #000;
+  text-align: center;
+  font-size: 1.1vw;
+  font-weight: 400;
+  line-height: 103.188%;
+  text-transform: capitalize;
+  margin-top: 1.1vh;
+}
+
+/* Podcast and Video specific styles */
+.library-item:nth-child(3),
+.library-item:nth-child(4) {
+  min-height: 19.4vh;
+}
+
+.library-item:nth-child(3) .item-content,
+.library-item:nth-child(4) .item-content {
+  position: relative;
+}
+
+.powered-by {
+  display: flex;
+  width: 9.1vw;
+  height: 2.8vh;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 1.6vw 1.6vw;
+  background: #0b74bb;
+  color: #fff;
+  text-align: center;
+  font-size: 0.47vw;
+  font-weight: 900;
+  line-height: 103.188%;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Ad Banner */
+.ad-banner {
+  display: flex;
+  height: 32.8vh;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 1.6vw;
+  background: url("https://cdn.builder.io/api/v1/image/assets/TEMP/588e2e421bb420d1d16516655c8e537c22a96e5c?width=1482")
+    lightgray 50% / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-overlay {
+  width: 7.8vw;
+  height: 15.3vh;
+  background: rgba(11, 116, 187, 0.5);
+  border-radius: 1.6vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  .dashboard-container {
+    width: 100%;
+    max-width: 1256px;
+  }
+}
+
+/* Focus and hover states */
+.nav-item:hover:not(.active) {
+  background: #e8edf0;
+}
+
+.menu-item:hover {
+  background: rgba(11, 116, 187, 0.1);
+  border-radius: 10px;
+}
+
+.tab-wrapper:hover .tab-bg:not(.active) {
+  background: #e8edf0;
+}
+
+.tab-wrapper:hover .tab-bg.active {
+  background: #0a69a8;
+}
+
+.library-item:hover .item-icon {
+  background: #e8edf0;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}

@@ -1,0 +1,208 @@
+/* Ebooks Container */
+.ebooks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.7vh;
+  width: 57.9vw;
+}
+
+/* Header Section */
+.ebooks-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1vw;
+  height: 3.3vh;
+}
+
+.back-arrow {
+  width: 1.9vw;
+  height: 3.3vh;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.ebooks-title {
+  color: #000;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 103.188%;
+  text-transform: capitalize;
+  margin: 0;
+  width: 8.5vw;
+  height: 2.9vh;
+}
+
+/* Subjects Grid */
+.subjects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.3vh 3.9vw;
+  width: 57.9vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Subject Card */
+.subject-card {
+  width: 9.1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-2px);
+}
+
+.subject-card:hover .subject-icon-container {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subject-icon-container {
+  width: 9.1vw;
+  height: 13.6vh;
+  border-radius: 1.6vw;
+  background: #f0f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.subject-icon {
+  width: 4.7vw;
+  height: 8.3vh;
+  flex-shrink: 0;
+}
+
+/* Special styling for Science card */
+.science-icon {
+  background: #b88ae1;
+}
+
+.subject-letter {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 3.1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.188%;
+}
+
+/* Special styling for Languages card */
+.languages-icon {
+  background: #97e4f9;
+}
+
+/* Subject Labels */
+.subject-label {
+  color: #000;
+  text-align: center;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.188%;
+  text-transform: capitalize;
+  width: 9.1vw;
+}
+
+.science-label {
+  color: #2d2d2d;
+}
+
+.computer-label {
+  line-height: 1.2;
+}
+
+/* Ad Banner */
+.ebooks-ad-banner {
+  width: 57.9vw;
+  height: 32.8vh;
+  position: relative;
+  border-radius: 1.6vw;
+  overflow: hidden;
+}
+
+.ad-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.6vw;
+}
+
+.ad-banner-overlay {
+  width: 7.8vw;
+  height: 15.3vh;
+  background: rgba(11, 116, 187, 0.5);
+  border-radius: 1.6vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Hover effects */
+.subject-card:hover .subject-icon-container {
+  background: #e8edf0;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.science-card:hover .subject-icon-container {
+  background: #a676d4;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.languages-card:hover .subject-icon-container {
+  background: #7dd8f1;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.back-arrow:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  .ebooks-container {
+    width: 100%;
+    max-width: 741px;
+  }
+
+  .subjects-grid {
+    width: 100%;
+    max-width: 741px;
+  }
+
+  .ebooks-ad-banner {
+    width: 100%;
+    max-width: 741px;
+  }
+}

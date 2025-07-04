@@ -1,0 +1,167 @@
+/* Subject Specific Styles */
+.subject-header {
+  display: flex;
+  align-items: center;
+  gap: 3.5vw;
+  margin-bottom: 5.1vh;
+  margin-top: 2.3vh;
+}
+
+.back-button {
+  width: 1.9vw;
+  height: 1.9vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.subject-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  height: 2.8vw;
+}
+
+.subject-icon {
+  position: relative;
+  width: 2.8vw;
+  height: 2.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dictionary-icon {
+  position: absolute;
+  width: 1.7vw;
+  height: 1.6vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subject-name {
+  color: #000;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 1.1vw;
+  font-weight: 500;
+  line-height: 103.188%;
+  text-transform: capitalize;
+}
+
+.subject-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2vh;
+  width: 34.4vw;
+}
+
+.nav-option {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-option:hover {
+  transform: translateY(-1px);
+}
+
+.nav-option-content {
+  display: flex;
+  align-items: center;
+  width: 34.4vw;
+  height: 6vh;
+  border-radius: 0.4vw;
+  background: #f0f3f5;
+  position: relative;
+}
+
+.nav-border {
+  width: 0.6vw;
+  height: 6vh;
+  border-radius: 0.4vw 0px 0px 0.4vw;
+  background: #5db8f6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.nav-text {
+  color: #333;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 103.188%;
+  text-transform: capitalize;
+  margin-left: 2.2vw;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .subject-name {
+    font-size: 14px;
+  }
+
+  .nav-text {
+    font-size: 12px;
+  }
+
+  .back-button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .subject-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .dictionary-icon {
+    width: 22px;
+    height: 21px;
+  }
+
+  .nav-option-content {
+    width: 440px;
+    height: 43px;
+    border-radius: 5px;
+  }
+
+  .nav-border {
+    width: 8px;
+    height: 43px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .nav-text {
+    margin-left: 28px;
+  }
+
+  .subject-navigation {
+    width: 440px;
+    gap: 30px;
+  }
+
+  .subject-header {
+    gap: 44px;
+    margin-bottom: 37px;
+    margin-top: 16px;
+  }
+}

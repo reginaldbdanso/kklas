@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const Sidebar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate("/");
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebar-background">
@@ -8,7 +16,8 @@ const Sidebar = () => {
             <div className="school-header">
               <div className="school-logo">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c06baaa35d93b457f1a71672e8cf9ad1e78f8443?width=160"
+                  // src="https://cdn.builder.io/api/v1/image/assets/TEMP/c06baaa35d93b457f1a71672e8cf9ad1e78f8443?width=160"
+                  src="/school-logo.svg"
                   alt="college 1"
                   className="logo-image"
                 />
@@ -111,7 +120,7 @@ const Sidebar = () => {
               <span>Help</span>
             </div>
 
-            <div className="menu-item">
+            <div className="menu-item" onClick={handleLogout}>
               <svg
                 className="menu-icon"
                 width="16"

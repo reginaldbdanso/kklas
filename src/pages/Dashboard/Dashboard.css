@@ -69,12 +69,13 @@
   width: 10.9vw;
   height: 14.2vh;
   position: relative;
+  /* padding: 80px 0px; */
 }
 
 .logo-image {
   display: flex;
   width: 6.3vw;
-  height: 11.1vh;
+  /* height: 6.3vh; */
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -92,7 +93,7 @@
   position: absolute;
   left: 0px;
   top: 11.8vh;
-  width: 10.9vw;
+  width: 11.9vw;
   height: 2.4vh;
 }
 
@@ -304,12 +305,12 @@
 
 /* Library Grid */
 .library-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 9.1vw);
+  display: flex;
+  flex-wrap: wrap;
   gap: 3.1vh 3.9vw;
   width: 35.2vw;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .library-item {

@@ -1,8 +1,8 @@
-const LibraryGrid = () => {
+const LibraryGrid = ({ onEbooksClick }) => {
   return (
     <div className="library-grid">
       {/* E-Books */}
-      <div className="library-item">
+      <div className="library-item" onClick={onEbooksClick}>
         <div className="item-content">
           <div className="item-icon">
             <img

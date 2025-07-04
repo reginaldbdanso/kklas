@@ -1,0 +1,440 @@
+/* Student Join Page Styles */
+.student-join-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Header Styles */
+.student-join-header {
+  width: 100%;
+  height: 8.61vh; /* 62px / 720px * 100 */
+  background: #0b74bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.student-join-header-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9.06vw; /* 116px / 1280px * 100 */
+  box-sizing: border-box;
+}
+
+.student-join-logo {
+  width: 8.98vw; /* 115px / 1280px * 100 */
+  height: 3.89vh; /* 28px / 720px * 100 */
+  flex-shrink: 0;
+}
+
+.student-join-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 8.13vw; /* 104px / 1280px * 100 - approximate spacing between nav items */
+}
+
+.student-join-nav-link {
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.94vw; /* 12px / 1280px * 100 */
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.student-join-nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
+.student-join-main {
+  flex: 1;
+  background: #fff;
+  position: relative;
+  padding: 0 6.09vw; /* 78px / 1280px * 100 */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-join-content-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-join-illustration-section {
+  position: absolute;
+  bottom: 0;
+  left: 2.11vw; /* 27px / 1280px * 100 */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.student-join-classroom-illustration {
+  width: 36.02vw; /* 461px / 1280px * 100 */
+  height: 39.03vh; /* 281px / 720px * 100 */
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.student-join-form-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.student-join-form-container {
+  width: 36.56vw; /* 468px / 1280px * 100 */
+  height: 30.83vh; /* 222px / 720px * 100 */
+  background: #f0f3f5;
+  border-radius: 0.78vw; /* 10px / 1280px * 100 */
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.student-join-form-title {
+  color: #000;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.94vw; /* 12px / 1280px * 100 */
+  font-weight: 700;
+  line-height: 115.9%;
+  margin: 7.5vh 0 3.61vh 0; /* 54px 0 26px 0 scaled */
+  width: 9.22vw; /* 118px / 1280px * 100 */
+  height: 1.94vh; /* 14px / 720px * 100 */
+  text-align: left;
+  position: absolute;
+  left: 3.98vw; /* 51px / 1280px * 100 */
+  top: 7.5vh; /* 54px / 720px * 100 */
+}
+
+.student-join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9.44vh; /* 68px / 720px * 100 - gap between input and button */
+  position: absolute;
+  top: 11.11vh; /* 80px / 720px * 100 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.student-join-form-field {
+  position: relative;
+}
+
+.student-join-form-input {
+  width: 30.47vw; /* 390px / 1280px * 100 */
+  height: 5.69vh; /* 41px / 720px * 100 */
+  background: #fff;
+  border: none;
+  border-radius: 0.78vw; /* 10px / 1280px * 100 */
+  padding: 1.81vh 1.72vw; /* 13px 22px scaled */
+  box-sizing: border-box;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.94vw; /* 12px / 1280px * 100 */
+  font-weight: 400;
+  color: #b1b1b1;
+}
+
+.student-join-form-input::placeholder {
+  color: #b1b1b1;
+}
+
+.student-join-form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(11, 116, 187, 0.2);
+  color: #000;
+}
+
+.student-join-button {
+  width: 12.03vw; /* 154px / 1280px * 100 */
+  height: 4.58vh; /* 33px / 720px * 100 */
+  background: #0b74bb;
+  border: none;
+  border-radius: 1.56vw; /* 20px / 1280px * 100 */
+  color: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.94vw; /* 12px / 1280px * 100 */
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-join-button:hover {
+  background: #095a94;
+}
+
+.student-join-button:active {
+  background: #07416b;
+}
+
+/* Footer Styles */
+.student-join-footer {
+  width: 100%;
+  height: 2.36vh; /* 17px / 720px * 100 */
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  padding-bottom: 2.36vh; /* 17px / 720px * 100 */
+}
+
+.student-join-footer-content {
+  width: 82.81vw; /* 1060px / 1280px * 100 */
+  height: 1.81vh; /* 13px / 720px * 100 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+}
+
+.student-join-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 4.61vw; /* 59px / 1280px * 100 */
+  position: absolute;
+  left: 0;
+  top: 0.14vh; /* 1px / 720px * 100 */
+}
+
+.student-join-footer-link {
+  color: #b1b1b1;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.78vw; /* 10px / 1280px * 100 */
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.student-join-footer-link:hover {
+  color: #666;
+}
+
+.student-join-footer-center {
+  position: absolute;
+  left: 50%;
+  top: 0.28vh; /* 2px / 720px * 100 */
+  transform: translateX(-50%);
+}
+
+.student-join-copyright {
+  color: #b1b1b1;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 0.78vw; /* 10px / 1280px * 100 */
+  font-weight: 700;
+  line-height: normal;
+}
+
+.student-join-social-links {
+  display: flex;
+  align-items: center;
+  gap: 2.11vw; /* 27px / 1280px * 100 */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.student-join-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.student-join-social-link:hover {
+  opacity: 0.7;
+}
+
+.student-join-social-link svg {
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .student-join-header-content {
+    padding: 0 40px;
+  }
+
+  .student-join-footer-content {
+    padding: 0 40px;
+  }
+
+  .student-join-main {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 968px) {
+  .student-join-content-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .student-join-illustration-section {
+    position: static;
+    order: 2;
+    transform: none;
+  }
+
+  .student-join-form-section {
+    position: static;
+    order: 1;
+    transform: none;
+    margin-left: 0;
+  }
+
+  .student-join-classroom-illustration {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .student-join-form-container {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .student-join-form-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .student-join-header-content {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .student-join-header-nav {
+    gap: 30px;
+  }
+
+  .student-join-header {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .student-join-footer-content {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .student-join-footer-center {
+    position: static;
+    transform: none;
+  }
+
+  .student-join-footer-links {
+    gap: 30px;
+  }
+
+  .student-join-social-links {
+    gap: 15px;
+  }
+
+  .student-join-footer {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-join-form-container {
+    width: calc(100vw - 40px);
+    padding: 30px 20px;
+  }
+
+  .student-join-form-input {
+    width: 100%;
+  }
+
+  .student-join-header-nav {
+    gap: 20px;
+  }
+
+  .student-join-nav-link {
+    font-size: 11px;
+  }
+
+  .student-join-footer-links {
+    gap: 20px;
+  }
+
+  .student-join-social-links {
+    gap: 12px;
+  }
+}

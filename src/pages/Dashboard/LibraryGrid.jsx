@@ -1,4 +1,9 @@
-const LibraryGrid = ({ onEbooksClick }) => {
+const LibraryGrid = ({
+  onEbooksClick,
+  onImagesClick,
+  onPodcastsClick,
+  onVideosClick,
+}) => {
   return (
     <div className="library-grid">
       {/* E-Books */}
@@ -16,7 +21,7 @@ const LibraryGrid = ({ onEbooksClick }) => {
       </div>
 
       {/* Images */}
-      <div className="library-item">
+      <div className="library-item" onClick={onImagesClick}>
         <div className="item-content">
           <div className="item-icon">
             <svg
@@ -88,7 +93,7 @@ const LibraryGrid = ({ onEbooksClick }) => {
       </div>
 
       {/* Podcast */}
-      <div className="library-item">
+      <div className="library-item" onClick={onPodcastsClick}>
         <div className="item-content">
           <div className="item-icon">
             <svg
@@ -293,7 +298,7 @@ const LibraryGrid = ({ onEbooksClick }) => {
       </div>
 
       {/* Syndicated Videos */}
-      <div className="library-item">
+      <div className="library-item" onClick={onVideosClick}>
         <div className="item-content">
           <div className="item-icon">
             <svg

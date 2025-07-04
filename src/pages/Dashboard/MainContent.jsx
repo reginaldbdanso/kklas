@@ -1,22 +1,48 @@
-import { useState } from "react";
 import LibraryGrid from "./LibraryGrid";
 import Ebooks from "./Ebooks";
+import Images from "./Images";
+import Podcasts from "./Podcasts";
+import Videos from "./Videos";
 import "./Ebooks.css";
 
-const MainContent = () => {
-  const [currentView, setCurrentView] = useState("library");
+const MainContent = ({ view, setView }) => {
+  const currentView = view || "library";
 
   const handleEbooksClick = () => {
-    setCurrentView("ebooks");
+    setView("ebooks");
+  };
+
+  const handleImagesClick = () => {
+    setView("images");
+  };
+
+  const handlePodcastsClick = () => {
+    setView("podcasts");
+  };
+
+  const handleVideosClick = () => {
+    setView("videos");
   };
 
   const handleBackToLibrary = () => {
-    setCurrentView("library");
+    setView("library");
   };
 
   const renderContent = () => {
     if (currentView === "ebooks") {
       return <Ebooks onBack={handleBackToLibrary} />;
+    }
+
+    if (currentView === "images") {
+      return <Images onBack={handleBackToLibrary} />;
+    }
+
+    if (currentView === "podcasts") {
+      return <Podcasts onBack={handleBackToLibrary} />;
+    }
+
+    if (currentView === "videos") {
+      return <Videos onBack={handleBackToLibrary} />;
     }
 
     return (
@@ -49,7 +75,12 @@ const MainContent = () => {
         </div>
 
         {/* Library Grid */}
-        <LibraryGrid onEbooksClick={handleEbooksClick} />
+        <LibraryGrid
+          onEbooksClick={handleEbooksClick}
+          onImagesClick={handleImagesClick}
+          onPodcastsClick={handlePodcastsClick}
+          onVideosClick={handleVideosClick}
+        />
 
         {/* Ad Banner */}
         <div className="ad-banner">

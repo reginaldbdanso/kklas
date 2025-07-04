@@ -5,6 +5,7 @@ import SubjectSpecific from "./pages/Dashboard/SubjectSpecific";
 import QuestionBank from "./pages/Dashboard/QuestionBank";
 import LearningMaterials from "./pages/Dashboard/LearningMaterials";
 import ExaminationGuidelines from "./pages/Dashboard/ExaminationGuidelines";
+import VideoListings from "./pages/Dashboard/VideoListings";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";

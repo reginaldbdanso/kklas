@@ -1,11 +1,14 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import VideoListings from "./VideoListings";
 import "./SubjectSpecific.css";
 
 const SubjectSpecific = () => {
   const navigate = useNavigate();
   const { subject: rawSubject } = useParams() || { subject: "English" };
   const subject = rawSubject ? decodeURIComponent(rawSubject) : "English";
+  const [searchParams] = useSearchParams();
+  const view = searchParams.get("view");
 
   const handleBack = () => {
     navigate("/dashboard");
@@ -15,6 +18,11 @@ const SubjectSpecific = () => {
     const route = section.toLowerCase().replace(/\s+/g, "-");
     navigate(`/dashboard/${encodeURIComponent(subject)}/${route}`);
   };
+
+  // If coming from videos, render VideoListings component
+  if (view === "videos") {
+    return <VideoListings />;
+  }
 
   return (
     <div className="dashboard-container">

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ onClassroomClick }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -30,7 +30,7 @@ const Sidebar = () => {
 
             {/* Main Navigation */}
             <div className="main-nav">
-              <div className="nav-item active">
+              <div className="nav-item active" onClick={onClassroomClick}>
                 <span>Classroom</span>
                 <svg
                   className="nav-arrow"
